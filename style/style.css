@@ -11,6 +11,7 @@ a{
     color: #fff;
 }
 
+
 .hero{
     width: 100%;
     height: 100vh;
@@ -24,6 +25,7 @@ a{
 .logo{
     width: 150px;
 }
+
 
 .nav-link{
     color: black;
@@ -78,6 +80,10 @@ p{
     padding: 15px;
 }
 
+.media:hover{
+    color: #033055;
+}
+
 .btn{
     width: 50%;
     color: #fbfcfd;
@@ -111,6 +117,7 @@ p{
 }
 
 @keyframes bubble {
+    
     0%{
         transform: translateY(0);
         opacity: 0;
@@ -159,7 +166,7 @@ p{
         padding-left: 30px;
         width: 250px;
     }
-    
+
     .nav-link{
         color: #fff;
     }
@@ -175,4 +182,75 @@ p{
     .btn{
         width: 30%;
     }
+}
+
+/*EXPLORE PAGE*/
+
+.heroE{
+    overflow: hidden;
+    background: #021f36;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+
+.pos__lightBtn{
+    top: -1px;
+    margin-left: 5px;
+}
+
+.light__btn{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 0;
+    transition: background 1s, margin-left 1s;
+}
+
+.circle__lb{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 3px;
+}
+
+.lamp-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100px;
+}
+
+.lamp{
+    width: 100px;
+}
+
+.light{
+    position: absolute;
+    top: 99%;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 400px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.active{
+    background: green;
+}
+
+.active .circle__lb{
+    background: #fff;
+    margin-left: 31px;
+}
+
+.on{
+    opacity: 1;
 }
