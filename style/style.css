@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    color: #fff;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../img/bgBubs.jpg);
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+}
+
+.logo{
+    width: 150px;
+}
+
+.nav-link{
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    padding-block: 30px;
+    text-align: center;
+}
+
+.nav-item{
+    border: 1.5px solid #cccccc;
+    margin: 4.5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.content{
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+h1{
+    font-size: 60px;
+}
+p{
+    font-weight: 100;
+}
+.textBox{
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background-image: url(../img/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.socials{
+    top: 90%;
+    position: absolute;
+    right: 5%;
+}
+
+.media{
+    padding: 15px;
+}
+
+.btn{
+    width: 50%;
+    color: #fbfcfd;
+    padding: 5px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+.menuIcon{
+    padding-right: 10px;
+}
+
+
+/*BUBBLES*/
+
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -80px;
+}
+
+@keyframes bubble {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 25px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+    width: 25px;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+    width: 20px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+    width: 35px;
+}
+
+@media only screen and (min-width:1000px){
+    .logo{
+        padding-left: 30px;
+        width: 250px;
+    }
+    
+    .nav-link{
+        color: #fff;
+    }
+    
+    .nav-item{
+        border: none;
+        padding-inline: 10px;
+    }
+    h1{
+        font-size: 90px;
+        margin: 0px 0 30px;
+    }
+    .btn{
+        width: 30%;
+    }
+}
