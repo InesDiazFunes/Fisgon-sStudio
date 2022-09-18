@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -193,6 +194,7 @@ p{
     width: 100%;
     color: #fff;
     position: relative;
+    transition: heroLight 1s;
 }
 
 .pos__lightBtn{
@@ -243,7 +245,7 @@ p{
 }
 
 .active{
-    background: green;
+    background: rgb(108, 211, 108);
 }
 
 .active .circle__lb{
@@ -251,6 +253,59 @@ p{
     margin-left: 31px;
 }
 
+.webCards{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    opacity: 0.01;
+    transition: opacity 0.5s;
+}
+.card{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    background-color: #c0cbcd;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.card h2{
+    color: black;
+    font-family: 'Parisienne', cursive;
+}
+
+.cartita1{
+    background-image: url(../img/banner2-removebg.png);
+}
 .on{
     opacity: 1;
+}
+
+.heroLight{
+    background: #2f5d83;
+}
+
+@media only screen and (min-width:1000px){
+    .lamp-container{
+        left: 30%;
+        width: 100px;
+    }
+    .lamp{
+        width: 150px;
+    }
+    .light{
+        position: absolute;
+        top: 99%;
+        left: 68%;
+        width: 550px;
+    }
+    .webCards{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
 }
