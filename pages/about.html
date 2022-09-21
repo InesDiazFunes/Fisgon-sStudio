@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FS | Explore</title>
+    <title>FS | About Me</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/fontawesome-free-6.2.0-web/css/fontawesome.css">
     <link rel="stylesheet" href="../assets/fontawesome-free-6.2.0-web/css/brands.css">
@@ -12,13 +12,12 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <section class="heroE" id="heroLight">
+    <section class="heroA">
         <nav class="navbar navbar-expand-lg bg-transparent ">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">
-                <img src="../img/logotipo_ine.png" alt="Logo" class="logo d-inline-block">
-
-              </a>
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logotipo_ine.png" alt="Logo" class="logo d-inline-block" >
+                  </a>
               
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon "></span>
@@ -37,7 +36,7 @@
                       <a class="nav-link" href="../pages/explore.html"><i class="fa-regular fa-eye menuIcon"></i>Explore</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/about.html"><i class="fa-solid fa-user-ninja menuIcon"></i>About Me</a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user-ninja menuIcon"></i>About Me</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fa-solid fa-mobile-retro menuIcon"></i>Contact</a>
@@ -48,45 +47,21 @@
               </div>
           </nav>
 
-          <section class="container pt-5 mt-5">
-            <div class="row pos__lightBtn">
-                <button type="button" onclick="toggleBtn()" id="btn_light" class="light__btn"><span class="circle__lb"></span></button>
-            </div>
-            <div class="lamp-container">
-                <img src="../img/lamp.png" alt="" class="lamp">
-                <img src="../img/light.png" alt="" class="light" id="light">
+          <section class="container">
+            <div class="row banner">
+                <h5>I'm</h5>
+                <h1> Inés <br> Díaz Funes</h1>
+                <h6></h6> 
             </div>
           </section>
-         
-          
-          <section class="container pt-5 mt-5 mb-3 webCards" id="webCards">
-                <div class="card cartita1 mt-3" style="width: 18rem;">
-                    <a href="https://inesdiazfunes.000webhostapp.com/" target="_blank">
-                        <h2>DcTortas</h2>
-                    </a>
-                </div>
-                <div class="card mt-3 " style="width: 18rem;">
-                    
-                    <a href="">
-                        <h2>Coming Soon...</h2>
-                    </a>
-                    
-                </div>
-          </section>
+
+
+
+
     </section>
 
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <script>
-        var btn_light = document.getElementById("btn_light");
-        var light = document.getElementById("light");
-        var webCards = document.getElementById("webCards");
-        var heroLight = document.getElementById("heroLight");
-        function toggleBtn(){
-            btn_light.classList.toggle("active");
-            light.classList.toggle("on");
-            webCards.classList.toggle("on");
-            heroLight.classList.toggle("heroLight");
-        }
-    </script>
 </body>
 </html>
