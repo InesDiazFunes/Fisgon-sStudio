@@ -323,7 +323,7 @@ p{
     overflow: hidden;
     background-image: url(../img/space.gif);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     min-height: 100vh;
     width: 100%;
@@ -332,10 +332,10 @@ p{
 }
 
 .astronauta{
-    width: 250px;
+    width: 110px;
     position: absolute;
-    right: 21%;
-    top: 40%;
+    right: 12%;
+    top: 19%;
     -webkit-transform:rotate(-65deg);
   -moz-transform: rotate(-65deg);
   -ms-transform: rotate(-65deg);
@@ -343,10 +343,10 @@ p{
   transform: rotate(-65deg);
 }
 .astronauta2{
-    width: 150px;
+    width: 100px;
     position: absolute;
-    right: 51%;
-    top: 80%;
+    right: 30%;
+    top: 85%;
     -webkit-transform:rotate(105deg);
   -moz-transform: rotate(105deg);
   -ms-transform: rotate(105deg);
@@ -354,9 +354,9 @@ p{
   transform: rotate(105deg);
 }
 .astronauta3{
-    width: 125px;
+    width: 105px;
     position: absolute;
-    left: 10%;
+    left: 2%;
     top: 10%;
     -webkit-transform:rotate(205deg);
   -moz-transform: rotate(205deg);
@@ -368,7 +368,7 @@ p{
 .formulario{
     position: absolute;
     top: 30%;
-    width: 50%;
+    width: 100%;
     border: 0;
 }
 
@@ -378,3 +378,63 @@ input{
     box-shadow: none;
 }
 
+@media only screen and (min-width:1000px){
+    .heroA{
+        overflow: hidden;
+        background-image: url(../img/space.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        width: 100%;
+        color: #fff;
+        position: relative;
+    }
+    
+    .astronauta{
+        width: 250px;
+        position: absolute;
+        right: 21%;
+        top: 40%;
+        -webkit-transform:rotate(-65deg);
+      -moz-transform: rotate(-65deg);
+      -ms-transform: rotate(-65deg);
+      -o-transform: rotate(-65deg);
+      transform: rotate(-65deg);
+    }
+    .astronauta2{
+        width: 150px;
+        position: absolute;
+        right: 51%;
+        top: 80%;
+        -webkit-transform:rotate(105deg);
+      -moz-transform: rotate(105deg);
+      -ms-transform: rotate(105deg);
+      -o-transform: rotate(105deg);
+      transform: rotate(105deg);
+    }
+    .astronauta3{
+        width: 125px;
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        -webkit-transform:rotate(205deg);
+      -moz-transform: rotate(205deg);
+      -ms-transform: rotate(205deg);
+      -o-transform: rotate(205deg);
+      transform: rotate(205deg);
+    }
+    
+    .formulario{
+        position: absolute;
+        top: 30%;
+        width: 50%;
+        border: 0;
+    }
+    
+    input{
+        border: 0px;
+        border-color: none;
+        box-shadow: none;
+    }
+}
