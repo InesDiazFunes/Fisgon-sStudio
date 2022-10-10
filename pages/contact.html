@@ -59,17 +59,20 @@
             <div class="row">
               <form class="formulario" action="https://formsubmit.co/fisgonstudio@gmail.com" method="POST">
                 <div class="mb-3">
+                  <input type="hidden" name="_captcha" value="false">
                   <label for="exampleFormControlInput1" class="form-label ">Names</label>
-                  <input type="email" class="form-control border-0 shadow-none" id="exampleFormControlInput1" placeholder="Ines Diaz Funes" required>
+                  <input type="text" class="form-control border-0 shadow-none" id="exampleFormControlInput1" placeholder="Ines Diaz Funes" required>
                 </div>
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label">Email address</label>
                   <input type="email" class="form-control shadow-none border-0" id="exampleFormControlInput1" placeholder="name@example.com" required>
                 </div>
                 <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                  <textarea class="form-control shadow-none border-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <label for="exampleFormControlTextarea1" class="form-label">Write a message</label>
+                  <input class="form-control shadow-none border-0" name="text" id="exampleFormControlTextarea1" >
                 </div>
+                <input type="hidden" name="_next" value="https://fisgonstudio.vercel.app/pages/contact.html">
+                <button type="submit" class="btn">Send</button>
               </form>
             </div>
           </section>
